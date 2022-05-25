@@ -38,29 +38,7 @@ img{
     max-width: 100%;
     display: block;
 }
-.grid2{
+.grid3{
     display: grid;
-    margin: 0 auto;
-    grid-template-columns:  1fr 200px;
-    grid-gap: 20px;
-    padding: 10px;
-    max-width: 800px;
-}
-.sideBar{
-    margin-bottom: 10px;
-}
-/*modo responsivo*/
-@media (max-width: 600px){
-    .grid2{
-        grid-template-columns:  1fr;
-    }
-    .sideBar{
-        display: flex; /*deixa os videos um do lado do outro*/
-        overflow: scroll; /*vai deixar os videos com uma barra horizontal*/
-    }
-    .sideBar > div{
-        flex: 1 0 200px;
-        margin: 0 10px;
-        border: solid 1px rgba(212, 212, 212, 0.678);
-    }
+    grid-template-columns: 1fr 1fr 300px;
 }
