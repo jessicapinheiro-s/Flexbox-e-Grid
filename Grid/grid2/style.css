@@ -39,5 +39,27 @@ img{
     display: block;
 }
 .grid2{
-    
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns:  1fr 200px;
+    grid-gap: 20px;
+    padding: 10px;
+    max-width: 800px;
+}
+.sideBar{
+    margin-bottom: 10px;
+}
+/*modo responsivo*/
+@media (max-width: 600px){
+    .grid2{
+        grid-template-columns:  1fr;
+    }
+    .sideBar{
+        display: flex;
+        overflow: scroll;
+    }
+    .sideBar > div{
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
 }
