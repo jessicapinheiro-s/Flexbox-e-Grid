@@ -45,3 +45,29 @@ img{
     margin: 0 auto;
     grid-gap: 20px ; /*espaçamento entre os itens*/
 }
+.grid1 > div:nth-child(n + 4){  /*seleciona a partir da 4 div pra frente*/
+    border:1px solid aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*divisao das colunas*/
+    grid-gap: 10px ; /*espaçamento entre os itens*/
+    align-items: center;
+}
+.grid1 > div.anuncio{
+    grid-column: 1; /*posiciona a img na primeira coluna da grid*/
+    grid-row:  2 / 5; /*a img fica a partir da seguinda linha até a quinta linha da grid*/
+    display: block; /*faz a img ficar do tamanho das img de cima*/
+   
+}
+/*modo responsivo*/
+@media (max-width: 600px){
+    .grid1{
+        grid-template-columns: 1fr 1fr ; /*divisao das colunas*/
+    }
+    .grid1 > div:nth-child(n + 4){
+        display: block;
+    }
+    .grid1 > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
