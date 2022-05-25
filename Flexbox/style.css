@@ -34,3 +34,17 @@ h1{
     text-align: center;
     margin-top: 20px;
 }
+img{
+    max-width: 100%;
+    display: block;
+}
+.flexbox{
+    display: flex; /*deixa o um do item do lado do outro*/
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.flexbox > div{
+    flex: 1 1 200px; /*img sempre com base de 200px, se nao tiver 200px quebra*/
+    margin: 10px;
+}
